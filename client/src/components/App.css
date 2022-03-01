@@ -1,0 +1,216 @@
+body{
+  margin: 0;
+}
+
+.App{
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-header {
+  background-color: #12ec12;
+  height: 60px;
+}
+
+h3{
+  margin-top: 0;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.main{
+  background-image: url('../images/bin2.jpg');
+  background-size: 400px 581px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  margin-top: 6%;
+}
+
+.top__container{
+  padding-top: 160px;
+}
+.container{
+  margin-top: 10px;
+}
+input {
+  text-align: center;
+}
+.monitor{
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  display: block;
+  margin: 5px auto;
+}
+
+
+.gauge{
+  width: 100%;
+  max-width: 200px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  color:black;
+  margin: 0 auto;
+}
+
+.gauge__body{
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  background-color: #08b808;
+  position: relative;
+  border-top-left-radius: 100% 200%;
+  border-top-right-radius: 100% 200%;
+  overflow: hidden;
+}
+
+
+:root{
+  --rotation-value1:0.208turn;
+  --rotation-value2:0.258turn;
+  --rotation-value3:0.35turn;
+}
+.gauge__fill1{
+  position: absolute;
+  top:100%;
+  left: 0;
+  width: inherit;
+  height: 100%;
+  background-color: #e00909;
+  transform-origin: center top;
+  transform: rotate(var(--rotation-value1));
+  transition: transform 0.2s ease-out;
+}
+
+.gauge__fill2{
+  position: absolute;
+  top:100%;
+  left: 0;
+  width: inherit;
+  height: 100%;
+  background-color: #e00909;
+  transform-origin: center top;
+  transform: rotate(var(--rotation-value2));
+  transition: transform 0.2s ease-out;
+}
+
+.gauge__fill3{
+  position: absolute;
+  top:100%;
+  left: 0;
+  width: inherit;
+  height: 100%;
+  background-color: #e00909;
+  transform-origin: center top;
+  transform: rotate(var(--rotation-value3));
+  transition: transform 0.2s ease-out;
+}
+.gauge__cover{
+  width: 75%;
+  height: 150%;
+  background: #ffff;
+  position: absolute;
+  border-radius: 50%;
+  top:25%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25%;
+  box-sizing: border-box;
+}
+ @media screen and (max-width: 375px) {
+.main{
+  padding-top: 50px;
+}
+
+.top__container{
+  padding-top: 30px;
+}
+
+ }
+
+
+@media screen and (min-width: 768px) {
+  h3{
+    font-size: 32px;
+  }
+  .App{
+    height: 900px;
+    width: 600px;
+    border: solid black 3px;
+    border-radius: 5px;
+    display: block;
+    margin: 5% auto;
+  }
+.main{
+  margin-top: 0;
+}
+.top__container{
+  padding-top: 180px;
+}
+}
+
+@media screen and (min-width: 820px) {
+  .top__container{
+    padding-top: 260px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+.App{
+  height: 700px;
+}
+.top__container{
+  padding-top: 100px;
+}
+}
+
+@media screen and (min-width: 1280px) {
+  .App{
+    height: 680px;
+    margin-top: 2%;
+  }
+  .main{
+    margin-top: 0;
+  }
+  .top__container{
+    padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .App{
+    height: 750px;
+    margin-top: 5%;
+  }
+  
+  .top__container{
+    padding-top: 150px
+  }
+}
+
+/* @media screen and (min-width: 1536px) {
+  .App{
+    margin-top: 2%;
+  }
+  .top__container{
+    padding-top: 220px
+  }
+} */
+
+@media screen and (min-width: 1920px) {
+  .App{
+height: 800px;
+  }
+
+  .top__container{
+  padding-top: 160px;
+  }
+}
